@@ -1,0 +1,89 @@
+.cust{
+  z-index: 19;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { font-family: sans-serif; }
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 99%;
+  height: 199px;
+  margin-right: 9px;
+  background: #7C8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 199px;
+  font-size: 79px;
+  color: white;
+}
+
+.footer{
+    background-image: url("images/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.mycustom {
+  position: relative;
+}
+.mycustom input[type=text] {
+  border: none;
+  width: 99%;
+  padding-right: 122px;
+}
+.mycustom button{
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  bottom: 3px;z-index:9;
+}
+
+.icon-white{
+  color:white;
+}
+
+/* .holding-image{
+  background-image: url("images/holding-earbud.jpg");
+} */
+
+
+.dot {
+  height: 49px;
+  width: 49px;
+  background-color: #FC845B;
+  border-radius: 49%;
+  display: inline-block;
+}
+
+.hrule{
+   color: #713D45;
+} 
+
+.spnHr{
+   display:flex;
+   width: 99%;
+   border: 0px solid;
+   border-color: #713D45;
+}
+
+.text-primary{
+   color: #FC6A50;
+}
+
+.signup-bg{
+ background-color: #373736;
+}
