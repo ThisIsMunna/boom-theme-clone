@@ -6,6 +6,8 @@ import holdingEarbud from "./images/holding-earbud.jpg";
 import whiteEarbud from "./images/blog-67.jpg";
 import girlOnCycle from "./images/blog-7.jpg";
 import girlSmiling from "./images/blog-5.jpg";
+import boomLogoEarbud from "./images/img-1a_470x.png";
+import blackEarbud from "./images/img-2_470x.png";
 import footerBg from "./images/footer-bg.jpg";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./App.css";
@@ -35,7 +37,7 @@ function App() {
   const handleClick = () => {
     window.scroll({
       top: -1,
-      behavior: "smooth", // 👈
+      behavior: "smooth",
     });
   };
 
@@ -54,12 +56,8 @@ function App() {
         <img src={userRegular} className="w-6" alt="" />
         <img src={userRegular} className="w-6" alt="" />
       </div>
-      {/* <!-- carousel -->
-    <!-- Flickity HTML init --> */}
-      <div
-        className="gallery js-flickity"
-        data-flickity-options='{ "pageDots": false, "wrapAround": true }'
-      >
+      {/* <!-- carousel --> */}
+      <Carousel>
         <div className="w-full mt-17 pl-10 flex">
           <div className="flex flex-wrap max-w-xs p-6">
             <div>Beautiful Design and awesome everthing</div>
@@ -82,22 +80,51 @@ function App() {
             <button className="bg-black text-white rounded-full py-4 px-3">
               shop now
             </button>
+          </div>
+        </div>
+      </Carousel>
+      <div className="mx-5">
+        <div className="flex">
+          <div>
+            <img src={boomLogoEarbud} alt="" />
+          </div>
+          <div>
+            <div>Simply awesome</div>
+            <div>Amazing Music Gadgets for Music Lovers</div>
+            <div>
+            Sed viverra ipsum nunc aliquet bibendum. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper.
+            </div>
+            <button>Buy Now</button>
+          </div>
+        </div>
+
+        <div className="flex flex-row-reverse">
+          <div>
+            <img src={blackEarbud} alt="" />
+          </div>
+          <div>
+            <div>Simply awesome</div>
+            <div>Amazing Music Gadgets for Music Lovers</div>
+            <div>
+            Sed viverra ipsum nunc aliquet bibendum. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper.
+            </div>
+            <button>Buy Now</button>
           </div>
         </div>
       </div>
 
       <div className="bg-red-301 flex">
         lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-        architecto dicta ipsam harum reiciendis, ipsa vero omnis veniam at
-        us culpa eaque itaque quasi
-        odit tempora. Natus expedita ullam perspiciatis totam!
+        architecto dicta ipsam harum reiciendis, ipsa vero omnis veniam at us
+        culpa eaque itaque quasi odit tempora. Natus expedita ullam perspiciatis
+        totam!
       </div>
       <Carousel showThumbs={false} infiniteLoop={true}>
         {/* <div style={{ height: "200px", color: "#fff" }}>this is slide 1</div>
         <div style={{ height: "200px", color: "#fff" }}>this is slide 2</div>
         <div style={{ height: "200px", color: "#fff" }}>this is slide 3</div> */}
-        <div >mdkfj</div>
-        <div >mdkfj</div>
+        <div>mdkfj</div>
+        <div>mdkfj</div>
       </Carousel>
       <div className="flex holding-image relative">
         <img src={holdingEarbud} />
